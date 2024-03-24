@@ -95,19 +95,19 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W               &kp E                  &kp R  &kp T         &kp Y                       &kp U  &kp I      &kp O       &kp P
-&kp A                &kp S               &kp D                  &kp F  &kp G         &kp H                       &kp J  &kp K      &kp L       &kp SEMICOLON
-&kp Z                &kp X               &kp C                  &kp V  &kp B         &kp N                       &kp M  &kp COMMA  &kp PERIOD  &kp FSLH
-       &kp LEFT_WIN         &lt 1 SPACE         &kp LEFT_SHIFT         &kp KP_ENTER  &lt 2 BACKSPACE  &kp RCTRL
+&kp Q                &kp W                   &kp E                  &kp R  &kp T         &kp Y                 &kp U  &kp I      &kp O       &kp P
+&kp A                &kp S                   &kp D                  &kp F  &kp G         &kp H                 &kp J  &kp K      &kp L       &kp SEMICOLON
+&kp Z                &kp X                   &kp C                  &kp V  &kp B         &kp N                 &kp M  &kp COMMA  &kp PERIOD  &kp FSLH
+       &lt 2 ESCAPE         &lt 1 BACKSPACE         &kp LEFT_SHIFT         &kp KP_ENTER  &kp SPACE  &kp RCTRL
             >;
         };
 
         lower_layer {
             bindings = <
-&kp N1             &kp N2             &kp N3             &kp N4     &kp N5         &kp N6            &kp N7     &kp N8     &kp N9  &kp N0
-&kp LC(A)          &kp LC(S)          &kp LC(D)          &kp LC(F)  &kp F12        &kp MINUS         &kp EQUAL  &kp GRAVE  &trans  &kp SQT
-&kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)  &kp LC(SPACE)  &trans            &trans     &trans     &trans  &trans
-           &trans             &trans             &trans             &trans         &kp RSHFT  &mo 4
+&kp ESC          &sk F1          &sk F4          &kp LS(HOME)  &kp INSERT  &kp N7           &kp N8  &kp N9  &kp MINUS  &kp BSPC
+&trans           &trans          &trans          &kp LS(END)   &trans      &kp N4           &kp N5  &kp N6  &kp PLUS   &trans
+&trans           &trans          &trans          &trans        &trans      &kp N1           &kp N2  &kp N3  &kp FSLH   &trans
+         &trans          &trans          &trans                &kp ENTER   &kp N0  &kp DOT
             >;
         };
 
@@ -162,6 +162,15 @@
 &trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
 &trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
         &trans          &trans          &trans          &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&kp N1             &kp N2             &kp N3             &kp N4     &kp N5         &kp N6            &kp N7     &kp N8     &kp N9  &kp N0
+&kp LC(A)          &kp LC(S)          &kp LC(D)          &kp LC(F)  &kp F12        &kp MINUS         &kp EQUAL  &kp GRAVE  &trans  &kp SQT
+&kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)  &kp LC(SPACE)  &trans            &trans     &trans     &trans  &trans
+           &trans             &trans             &trans             &trans         &kp RSHFT  &mo 4
             >;
         };
     };

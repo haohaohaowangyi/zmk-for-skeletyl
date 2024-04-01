@@ -123,7 +123,7 @@
         adjust_layer {
             bindings = <
 &kp ESC           &kp F1             &kp F4          &kp LS(HOME)  &kp INSERT  &kp N7           &kp N8  &kp N9  &kp MINUS  &kp BSPC
-&kp CAPS          &trans             &trans          &kp LS(END)   &trans      &kp N4           &kp N5  &kp N6  &kp EQUAL  &trans
+&kp CAPS          &trans             &trans          &kp LS(END)   &trans      &kp N4           &kp N5  &kp N6  &kp PLUS   &trans
 &trans            &kp LC(R)          &trans          &trans        &kp DELETE  &kp N1           &kp N2  &kp N3  &kp FSLH   &to 0
           &trans             &trans          &trans                &kp ENTER   &kp N0  &kp DOT
             >;

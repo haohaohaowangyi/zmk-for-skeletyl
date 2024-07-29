@@ -62,6 +62,11 @@
             bindings = <&kp PIPE>;
             key-positions = <14 15>;
         };
+
+        buy {
+            bindings = <&buy>;
+            key-positions = <3 4>;
+        };
     };
 
     behaviors {
@@ -87,6 +92,15 @@
             tapping-term-ms = <600>;
             global-quick-tap;
             quick-tap-ms = <400>;
+        };
+    };
+
+    macros {
+        buy: buy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_2 &kp NUMBER_1>;
+            label = "BUY";
         };
     };
 

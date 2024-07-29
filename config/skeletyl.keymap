@@ -67,6 +67,11 @@
             bindings = <&buy>;
             key-positions = <3 4>;
         };
+
+        tonghuashun {
+            bindings = <&tonghuashun>;
+            key-positions = <6 5>;
+        };
     };
 
     behaviors {
@@ -101,6 +106,13 @@
             #binding-cells = <0>;
             bindings = <&kp NUMBER_2 &kp NUMBER_1>;
             label = "BUY";
+        };
+
+        tonghuashun: tonghuashun {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp A &kp N &kp G &kp H &kp A &kp O &kp D &kp A &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4>;
+            label = "TONGHUASHUN";
         };
     };
 
